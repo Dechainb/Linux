@@ -1,5 +1,13 @@
 # Il filesystem
-Il file system, inteso come la directory che contiene tutte le altre, è rappresentato dal simbolo «/» detto root (radice), da non confondere con la cartella /root che rappresenta la Home dell'amministratore.
+
+il Filesystem Hierarchy Standard (FHS) («Standard di Gerarchia dei Filesystem») è uno standard che definisce le directory principali ed il loro contenuto nel file system dei sistemi operativi Unix-like. E'rappresentato dal simbolo «/» detto root (radice), da non confondere con la cartella /root che rappresenta la Home dell'amministratore.
+
+Il processo di sviluppo di una gerarchia standard per i file system iniziò nell'agosto 1993 
+
+
+![FHS](../Images/FHS.PNG)
+
+
 
 Nei sistemi Unix e suoi derivati è definito uno standard sull'albero delle directory di sistema. Tuttavia ogni distribuzione può apportare proprie personalizzazioni. Di seguito quindi è illustrato un elenco 
 
@@ -12,7 +20,7 @@ Contiene le immagini del kernel e i file indispensabili al bootstrap del sistema
 
 /dev<br>
 È la directory che individua le periferiche hardware sotto forma di file.<br>
-Per esempio, un hard disk può essere qui individuato dal file /dev/sda e le sue partizioni attraverso i file /dev/sda1, /dev/sda2, ecc. Occorre tuttavia precisare che in questa directory i dispositivi di memorizzazione non sono esplorabili direttamente. Per visionarne il contenuto si possono sfruttare le cartelle che Ubuntu crea automaticamente nella directory /media o, in alternativa, effettuare il montaggio manualmente.
+Per esempio, un hard disk può essere qui individuato dal file /dev/sda e le sue partizioni attraverso i file /dev/sda1, /dev/sda2, ecc. Occorre tuttavia precisare che in questa directory i dispositivi di memorizzazione non sono esplorabili direttamente. Per visionarne il contenuto si possono sfruttare le cartelle che il sistema  crea automaticamente nella directory /media o, in alternativa, effettuare il montaggio manualmente.
 
 /etc<br>
 Contiene i file di configurazione del sistema.
@@ -40,17 +48,16 @@ Contiene le parti di file recuperate al riavvio in caso di interruzione della co
 
 
 /media<br>
-Secondo gli standard dovrebbe essere la directory destinata al montaggio dei dispositivi rimovibili. Tuttavia in Ubuntu viene utilizzata indistintamente per il montaggio automatico di qualsiasi dispositivo di memorizzazione (CD, DVD, chiavette USB, partizioni degli hard disk, ecc.).
+Secondo gli standard dovrebbe essere la directory destinata al montaggio dei dispositivi rimovibili o qualsiasi dispositivo di memorizzazione.
 
 Ogni volta che un dispositivo viene collegato al computer o dal file manager si seleziona una partizione dell'hard disk, il sistema crea all'interno della directory /media una cartella dalla quale è possibile esplorarne il contenuto.
 
 /mnt<br>
-È secondo gli standard la directory destinata al montaggio dei dispositivi. Tuttavia in Ubuntu gli automatismi di sistema non la utilizzano a vantaggio della directory /media.
+È secondo gli standard la directory destinata al montaggio dei dispositivi. 
 
-Tuttavia può essere utilizzata dagli utenti per i montaggi manuali.
 
 /opt<br>
-È deputata a contenere sotto-directory per programmi opzionali o comunque non standard. In Ubuntu non viene utilizzata. Tuttavia può venire occupata dai programmi installati dall'utente, come ad esempio software proprietari e/o di terze parti (non presenti nei repository) che non rispettano la struttura del filesystem standard.
+È deputata a contenere sotto-directory per programmi opzionali o comunque non standard.   Tuttavia può venire occupata dai programmi installati dall'utente, come ad esempio software proprietari e/o di terze parti (non presenti nei repository) che non rispettano la struttura del filesystem standard.
 
 /proc<br>
 Contiene le informazioni relative al sistema, come un file system virtuale creato dal kernel dinamicamente istante per istante, in memoria e non sul disco.
@@ -89,7 +96,7 @@ Contiene tutti file che hanno informazioni dinamiche, che tendono a modificarsi 
 
 Di seguito sono citate alcune delle sotto-directory principali:
 
-* /var/log: file di registro sui quali viene salvato ciò che avviene al sistema in ogni istante. Consultare i file di log può aiutare a risalire alle cause di eventuali problemi nel sistema. Per approfondire consultare questa guida.
+* /var/log: file di registro sui quali viene salvato ciò che avviene al sistema in ogni istante. Consultare i file di log può aiutare a risalire alle cause di eventuali problemi nel sistema. 
 
 * /var/cache/apt/archives: durante il processo di installazione dei programmi è in questa cartella che viene memorizzata una copia di sicurezza dei pacchetti .deb scaricati. Dal momento che con il tempo possono arrivare ad occupare molto spazio di memoria, l'amministratore può prendere in considerazione la rimozione dei pacchetti, sia manualmente sia attraverso apt.
 
