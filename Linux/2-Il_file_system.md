@@ -5,9 +5,10 @@ il Filesystem Hierarchy Standard (FHS) («Standard di Gerarchia dei Filesystem»
 Il processo di sviluppo di una gerarchia standard per i file system iniziò nell'agosto 1993 
 
 
-![FHS](../Images/FHS.PNG)
+![alt text](../Images/FHS.JPG)
 
-
+Lo standard FHS viene attualmente mantenuto dall'organizzazione non-profit Free Standards Group che è composta dai maggiori produttori di software ed hardware.<br>
+Tuttavia la gran parte delle distribuzioni Linux, comprese quelle sviluppate dai membri del Free Standards Group, non seguono completamente questo standard. In particolare, dei percorsi creati specificatamente dai membri dell'FHS, come /srv/, non hanno trovato una grande applicazione. Alcuni sistemi Unix e Linux rompono completamente con l'FHS preferendo un approccio differente; un esempio è GoboLinux. Anche macOS usa nomi leggibili uniti ad un filesystem basato sull'FHS. La versione corrente dello FHS è la 3.0 del 3 giugno 2015.
 
 Nei sistemi Unix e suoi derivati è definito uno standard sull'albero delle directory di sistema. Tuttavia ogni distribuzione può apportare proprie personalizzazioni. Di seguito quindi è illustrato un elenco 
 
