@@ -63,20 +63,25 @@ Quando avviamo il terminale vedremo una riga come questa:<br>
 
 mario@mario-desktop:~$
 
-L'utente mario, all'interno del computer mario-desktop, si trova attualmente nella propria Home, cioè /home/mario/, indicata con il simbolo ~  e caratterizzata dal simbolo $.
-$ indica l'utente scritto a sx
-~ indica che siamo nella directory dell'utente $
-'# indica che siamo amministratori di sisstema.
+L'utente mario, all'interno del computer mario-desktop, si trova attualmente nella propria Home, cioè /home/mario/, indicata con il simbolo \~  e caratterizzata dal simbolo \$. <br>
+\$ indica l'utente scritto a sx <br>
+\~ indica che siamo nella directory dell'utente \$ <br>
+\# indica che siamo amministratori di sisstema.
 
 
 Per avere la conferma di essere nella cartella /home/mario/ è utile eseguire il comando pwd, il quale stamperà a schermo il percorso corrente.<br>
 Invece digitando il comando ls si ottiene l'elenco dei file presenti nella cartella /home/mario/.
 
 Alla destra della riga, dopo $ troveremo<br>
- Comando  Opzioni  Argmoenti
+ #### 1.Comando  
+ #### 2.Opzioni  
+ #### 3.Argmoenti
 
 
- 1. Ogni comando è il nome di un programma, che viene ricercato in alcune cartelle pre-determinate. Solitamente queste sono /bin, /usr/bin, e talvolta /usr/local/bin.<br>In quest'ultima cartella è usuale installare nuovi comandi creati dall'utente, oppure installati come applicazioni di terze parti.
+ 1. Ogni comando è il nome di un programma, che viene ricercato in alcune cartelle pre-determinate. Solitamente queste sono 
+ * /bin, 
+ * /usr/bin, 
+ * e talvolta /usr/local/bin.<br>In quest'ultima cartella è usuale installare nuovi comandi creati dall'utente, oppure installati come applicazioni di terze parti.
 
  2. Ogni comando può accettare delle opzioni o flag, ovvero una sequenza di caratteri successive al nome del comando, che si possono utilizzare per specificare delle azioni che il comando può effettuare.<br> Tipicamente i flag si distinguono in quelli brevi, identificati da una linea ed una sola lettera, e quelli lunghi, che iniziano con due linee seguita poi da parola chiave più lunga. Le opzioni si possono combinare tra loro cosicché, invece di dover scrivere -r -v, possiamo utilizzare -rv.
 
@@ -102,7 +107,7 @@ Alcuni comandi non necessitano della digitazione di alcun percorso. Ad esempio, 
 
 sudo apt-get install nome_pacchetto
 
-[Ubuntu](https://wiki.ubuntu-it.org/AmministrazioneSistema)
+[Guida Ubuntu](https://wiki.ubuntu-it.org/AmministrazioneSistema)
 
 
 
