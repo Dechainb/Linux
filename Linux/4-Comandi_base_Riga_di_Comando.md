@@ -1,3 +1,8 @@
+
+
+Per avere la conferma di essere nella cartella /home/mario/ è utile eseguire il comando pwd, il quale stamperà a schermo il percorso corrente. Digitare il seguente comando:
+
+pwd
 Gestione di file e directory
 
 * pwd

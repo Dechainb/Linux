@@ -63,10 +63,22 @@ Quando avviamo il terminale vedremo una riga come questa:<br>
 
 mario@mario-desktop:~$
 
-L'utente mario, all'interno del computer mario-desktop, si trova attualmente nella propria Home, cioè /home/mario/, indicata con il simbolo \~  e caratterizzata dal simbolo \$. <br>
-\$ indica l'utente scritto a sx <br>
-\~ indica che siamo nella directory dell'utente \$ <br>
-\# indica che siamo amministratori di sisstema.
+L'utente mario, all'interno del computer mario-desktop, si trova attualmente nella propria Home, cioè /home/mario/, indicata con il simbolo ~ chiamato Tilde.
+
+È attiva la modalità utente, indicata dal simbolo $.<br>Esiste anche una modalità amministratore, attivabile con il comando sudo -s e caratterizzata dal simbolo #.<br> 
+[Amministratore di sistema](https://wiki.ubuntu-it.org/AmministrazioneSistema/PrivilegiDiAmministrazione/Sudo)
+
+
+Il file system, inteso come la directory che contiene tutte le altre, è rappresentato dal simbolo / chiamato root (da non confondere con la cartella /root la Home dell'amministratore)
+
+## la directory home
+
+È la directory che contiene tutte le Home degli utenti presenti nel sistema. Ogni home porta il nome dell'utente, nel nostro caso mario.
+
+A disposizione di ogni utente all'interno della cartella /home, ci sarà quindi una cartella con il suo stesso nome, nel nostro esempio mario. Il suo percorso completo sarà /home/mario, che nel terminale può essere sinteticamente rappresentato dal simbolo ~ chiamato tilde.
+Tale cartella riveste una grande importanza all'interno del sistema, dato che al suo interno sotto forma di file nascosti, sono memorizzati tutti i file di configurazione dei programmi.<br>
+Per esempio, nella sottocartella ~/.mozilla vengono memorizzati i dati riguardanti il browser Firefox: segnalibri, estensioni, impostazioni menu, ecc.<br>
+Per nascondere un file è sufficiente preporre un punto prima del nome. Ad es. per nascondere il file script.sh è sufficiente rinominarlo in .script.sh.
 
 
 Per avere la conferma di essere nella cartella /home/mario/ è utile eseguire il comando pwd, il quale stamperà a schermo il percorso corrente.<br>
