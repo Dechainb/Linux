@@ -60,23 +60,45 @@ cp /prova/miofile /prova1/nuovofile
 
 Copiare la cartella /prova, e tutto il suo contenuto, nella cartella /prova_copia:<br>
 cp -r /prova /prova_copia
-* mv
 
-Il comando mv serve per spostare, o rinominare, file e directory.
+## mv
 
-La sintassi del comando è: mv [opzioni] origine destinazione
+Sintassi<br>
+$ mv [opzione] [origine] [destinazione]
 
-Cambiare il nome al file miofile in nuovofile:<br>
-mv miofile nuovofile
+Il comando mv di Linux ha due funzioni importanti. 
 
-Spostare il file miofile nella directory /prova, sovrascrivendo un eventuale file con lo stesso nome:<br>
-mv miofile /prova
+ 1) In primo luogo, viene utilizzato per spostare i file da una directory a un’altra, ma può anche essere usato per spostare le directory stesse. 
+ 
+ 2) Una seconda possibile funzione del comando è quella di rinominare dati o cartelle. 
 
-Cambiare il nome alla directory /prova in /prova_nuova:<br>
-mv /prova /prova_nuova
+  Ci sono due modi possibili per farlo:
 
-Spostare la directory /prova nella directory già esistente /prova.bak:<br>
-mv /prova /prova.bak
+  1)  richiamare prima la directory di origine con il comando cd di Linux e spostate il file da lì a una directory di destinazione 
+
+  $ mv clienti.txt ~/documenti/contatti/
+
+
+  2)  memorizzate la directory di origine nel comando stesso ed eseguire il trasferimento da un’altra directory di lavoro.
+
+  $ mv /home/fatture/clienti.txt /documenti/contatti/
+
+  Esistono tre opzioni per mv:
+
+ * -i o –interactive: questa opzione fa sì che il sistema chieda se un file o una directory devono essere sovrascritti.
+* -u o –update: con questa opzione un file di origine viene spostato solo se quello di destinazione è più vecchio.
+* -v o –verbose: questa opzione mostra il progresso durante lo spostamento.
+
+Esempi di comando mv:
+
+* mv *.txt /documenti/  sposta tutti i file .txt
+
+* $ mv clienti.txt clienti_nuovi.txt rinomina il file
+
+* $ mv fatture fatture_vecchie rinomina la cartella
+
+* $ mv /fatture_vecchie /archivio  sposta la directory fatture_vecchie nella directory archivio
+
 
 * rm e rmdir
 
