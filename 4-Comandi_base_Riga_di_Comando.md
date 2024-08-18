@@ -99,6 +99,47 @@ Esempi di comando mv:
 
 * $ mv /fatture_vecchie /archivio  sposta la directory fatture_vecchie nella directory archivio
 
+## sudo
+
+Viene utilizzato su linux per eseguire quello specifico comando e solo quello  con i privilegi di sicurezza di un altro utente, solitamente l' utente root che è l'amministratore del sistema.
+
+la sua sintassi è<br>
+sudo -u [utente] [comando]
+
+Quando viene utilizzato senza specificare un utente utilizza di default l'utente root.
+
+sudo [comando]<br>
+che corrisponde a<br>
+sudo -u root [comando]
+
+Se sulla riga comandi digito il comando su , premo invio e poi digito la password dell'utente root, allora diventerò utente root e qualsiasi comando sarà fatto come tale.
+
+![alt text](Images/Comando_su.JPG)
+
+per ritornare a utente normale<br>
+su [nome_utente]
+
+## APT
+APT (Advanced Packaging Tool) è un potente sistema di gestione di pacchetti.<br>Per eseguire APT richiede i privilegi d'amministrazione.
+
+Con Ubuntu 16.04 LTS è stato introdotto il  comando apt.
+Qual è la differenza fra i comandi apt-get e apt. 
+
+Debian (la “mamma” delle tantissime distribuzioni GNU/Linux basate su Ubuntu e sulla stessa Debian), per gestire il proprio sistema di pacchettizzazione dpkg, ha adottato un set di strumenti chiamato Advanced Packaging Tool (APT) (da non confondere con il comando apt, che non è esattamente la stessa cosa).<br>Come forse già saprete, esistono vari tool per gestire i pacchetti, sia con interfaccia grafica che a riga di comando: Ubuntu/GNOME Software, Synaptic, Aptitude, apt-get e apt-cache.
+
+Apt integra un insieme di funzioni che hanno sostituito in gran parte quelle di apt-get e apt-cache, fornendo i comandi necessari per la gestione dei pacchetti.
+
+https://manpages.debian.org/jessie/apt/apt.8.en.html
+
+Con apt è possibile trovare in un solo posto tutte le funzionalità necessarie, senza perdersi in lunghi elenchi di opzioni e parametri. apt ha meno opzioni ma organizzate in maniera più funzionale.
+
+![alt text](Images/Apt1.JPG)
+
+![alt text](Images/Apt2.JPG)
+
+
+
+
 
 * rm e rmdir
 
