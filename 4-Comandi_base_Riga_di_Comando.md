@@ -138,6 +138,56 @@ Con apt è possibile trovare in un solo posto tutte le funzionalità necessarie,
 ![alt text](Images/Apt2.JPG)
 
 
+## Echo
+
+Viene utilizzato per stampare del testo o variabili sul terminale. È utilizzato spesso in script e nel terminale per visualizzare messaggi, contenuti di variabili, o anche per creare file di testo.
+
+echo "Ciao, mondo!" > fabiofile
+ crea il file fabiofile e scrive al suo interno ciao, mondo
+
+
+## ls
+
+Viene utilizzato per elencare i file e le directory presenti in una directory. Il comportamento del comando ls può essere personalizzato utilizzando diverse opzioni e variabili
+
+ls -l   Mostra i dettagli dei file in formato lungo (long listing format), inclusi i permessi, il numero di link, il proprietario, il gruppo, la dimensione del file e la data di modifica.
+
+ls -a Mostra tutti i file, inclusi quelli nascosti.
+
+ls -h Mostra le dimensioni dei file in un formato leggibile
+
+ls --color   Aggiunge colore ai file in base alla tipologia di file.
+
+Alias e variabili di ambiente:
+Puoi anche creare alias per il comando ls per personalizzare il comportamento predefinito. Ad esempio:
+
+alias ls='ls --color=auto -h'
+
+## useradd
+Creare un nuovo utente con il nome nomeutente:
+
+sudo useradd -m -s /bin/bash [nomeutente]
+
+* -m: Crea la directory home per l'utente (solitamente in /home/nomeutente).
+* -s /bin/bash: Specifica la shell di login predefinita per l'utente (in questo caso, bash). Puoi scegliere una shell diversa se lo desideri.
+* nomeutente: Sostituisci questo con il nome dell'utente che vuoi creare.
+
+ Impostare una password:
+
+sudo passwd [nomeutente]
+
+Impostare permessi amministrativi aggiungendo al gruppo sudo:
+
+sudo usermod -aG sudo [nomeutente]
+
+-aG sudo: Aggiunge l'utente al gruppo sudo, consentendogli di eseguire comandi come amministratore utilizzando sudo.
+
+Cambiare utente
+
+su - [nomeutente]
+
+
+
 
 
 
